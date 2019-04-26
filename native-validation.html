@@ -20,5 +20,17 @@
         <button type="submit">Submit this form</button>
       </form>
     </div>
+    <script>
+      var form = document.querySelector('#my-super-form');
+      form.addEventListener('submit', event => {
+        event.preventDefault();
+        const isValid = form.checkValidity();
+        if (!isValid) {
+          return alert('the form is not valid');
+        }
+        const formData = new FormData(form);
+        // Do something with the formData, example send it via a ajax
+      });
+    </script>
   </body>
 </html>
