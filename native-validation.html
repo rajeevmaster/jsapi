@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>native js validation</title>
+  </head>
+  <body>
+    <div>
+      <form id="my-super-form" novalidate>
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          minlength="2"
+          pattern="[a-zA-Z]*"
+          required
+        />
+        <button type="submit">Submit this form</button>
+      </form>
+    </div>
+  </body>
+</html>
